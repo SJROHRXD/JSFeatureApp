@@ -1,0 +1,219 @@
+I want to create a small project with JavaScript (not TS for a change!)
+I want that app to feature... functionality that highlights common JS needs / showcases that I know the fundamentals of JavaScript
+I will use Vanilla tools for this application: HTML, CSS (might add a framework later, depending), and JSS
+This app may or may not have a backend, but I'm leaning on keeping it simple
+I will need to define what principals of JavaScript I want to demonstrate
+I will use the JS Knowledge map to define what I intend to feature
+I will restrict what I intend to feature so the project doesn't get completely out of hand lol
+
+FEATURES:
+Arrays
+
+    .. (spread)
+    .at()
+    .every()
+    .filter()
+    .find()
+    .forEach()
+    .includes()
+    .join()
+    .length
+    .map()
+    .push()
+    .reduce()
+    .some()
+    .splice()
+    ?. (optional chaining)
+    Arrays of objects
+    [] (get item)
+    destructuring
+
+Classes
+
+    Classes
+    Getters
+    Inheritance
+            Class vs Function
+            Private class fields
+            Public class fields
+            inheritance
+            prototypal inheritance
+            prototype chain
+            super()
+    Instance methods
+    Instance variables
+    Setters
+    Static methods
+
+DOM
+
+    Events
+            Change
+            DOMContentLoaded
+            Event details
+            Focus/blur
+            Keydown/keyup
+            Scroll
+            Submit
+            element.addEventListener()
+            element.removeEventListener()
+            event.currentTarget
+            event.preventDefault()
+    HTML Element
+            .classList.add()
+            .classList.contains()
+            .classList.remove()
+            .classList.replace()
+            .classList.toggle()
+            .dataset
+            .getAttribute()
+            .innerHTML
+            .insertAdjacentHTML()
+            .parentElement
+            .remove()
+            .removeAttribute()
+            .setAttribute()
+            .style
+            .textContent
+            .value
+            HTMLElement
+            document.appendChild()
+            document.createElement()
+    Selection
+            NodeList
+            NodeList to Array
+            document
+            document.body
+            document.documentElement
+            document.getElementById()
+            document.querySelector()
+            document.querySelectorAll()
+            element.closest()
+
+Functions
+
+    => (arrow functions)
+    ?. (optional chaining)
+    Asynchronous callbacks
+    Callback pattern
+    Closures
+    Hoisting
+    Lexical scope
+    Passing functions
+    basic functions
+    default parameters
+    implicit return
+
+Misc
+
+    Deep equal
+    EcmaScript
+    Event loop
+    IIFE
+    Immutability
+    Window
+
+Modules
+
+    ES Modules
+    Importing from libraries
+    Module bundlers
+    Package managers
+    Parcel
+    Vite
+    Webpack
+    default export
+    import
+    import() (dynamic imports)
+    named export
+    npm
+    package.json
+    script type="module"
+    yarn
+
+Number
+
+    .toString()
+    Division remainder (%)
+    NaN
+    Number.parseInt()
+
+Objects
+
+    ... (spread)
+    ?. (optional chaining)
+    ?? (nullish coalescing)
+    Advanced control flow
+    Object.entries()
+    Object.keys()
+    Object.values()
+    destructuring
+    dynamic properties
+    object shorthand
+    property access
+
+Promises
+
+    .catch()
+    .finally()
+    .then()
+    Promise.reject()
+    Promise.resolve()
+    Promises
+    async function
+    async/await
+    await keyword
+    new Promise()
+    states
+
+Strings
+
+    .at()
+    .endsWith()
+    .includes()
+    .length
+    .replace()
+    .replaceAll()
+    .split()
+    .startsWith()
+    .substring()
+    .toLowerCase()
+    .toUpperCase()
+    .trim()
+    Concatenation
+    Template strings
+    [] (character access)
+
+Syntax
+
+    Exceptions
+    Semi-colons
+    for (loops)
+    for...in
+    for...of
+    if
+    try...catch
+    try...catch...finally
+
+Variables
+
+    ?? (nullish coalescing)
+    Hoisting
+    Temporal Dead Zone
+    const
+    let
+    var (legacy)
+
+fetch API
+
+    DELETE
+    Error handling
+    Fetch Wrapper
+    GET
+    JSON.parse()
+    JSON.stringify()
+    POST
+    PUT
+    Response status codes
+    Response.json()
+    fetch()
