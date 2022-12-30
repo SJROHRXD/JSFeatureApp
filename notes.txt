@@ -262,3 +262,6 @@ Script tags can also have one of the following two attributes: async or defer. U
 The async script will be loaded in a separate thread, and once loaded, it will be evaluated immediately, regardless of whether the page is already loaded or not. There is also no guarantee as to the order of evaluation relative to other scripts on the page, so this is, in that sense, the least reliable way of evaluating your script if you have more than one. Also, because there are no guarantees about the page contents at evaluation time, you will need to wait for the DOMContentLoaded event if you want to work with page elements. I have not yet found a good use case for the async script, but it has its unique characteristics that will probably come in handy in some cases.
 
 The defer script tag is by far the most useful one for general use. It works similar to async, with the notable difference that the evaluation is postponed until the page is parsed.
+
+https://plainenglish.io/blog/the-basic-vanilla-js-project-setup-9290dce6403f#dom-node-creation
+
