@@ -217,3 +217,12 @@ fetch API
     Response status codes
     Response.json()
     fetch()
+
+I have created a git repo:
+
+                git init 
+                git add .
+                git config --global user.email "rohr.olasz@gmail.com"
+                git commit -m "initial commit"
+                git remote add origin https://github.com/SJROHRXD/JSFeatureApp.git
+
