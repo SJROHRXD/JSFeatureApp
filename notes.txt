@@ -227,3 +227,22 @@ I have created a git repo:
                 git remote add origin https://github.com/SJROHRXD/JSFeatureApp.git
                 git push origin master
 
+I will follow the In Plain English methodology in regards to application structure:
+
+In Latin, redux (from the verb reducere, meaning "to lead back") can mean "brought back" or "bringing back."
+
+Before we start
+If I were to name the single most important thing you need to know in order to be effective with Vanilla, it's this:
+
+Take advantage of the platform
+
+This is from the Vanilla Redux Manifesto that we (try to) abide by in the front-end engineering team at Coin Metrics. (Btw, it's this redux, not the other one.) In short, if there's something the platform can do for you, understand what it does and take full advantage of it. Do not reinvent the wheel just because you don't like how the platform does it or what it looks like.
+
+The files #
+Let me get this out of the way: you do not need a build tool for this setup. Ideally, you just want to be able to open the index.html file and start working. While this sounds reasonably easy, we will nevertheless cover some details here that are probably not quite obvious to those that are just getting started with Vanilla (or maybe, like me, have done this for years in the past but completely lost the touch).
+
+The bare minimum you need is a folder to house your files, index.html, index.js and index.css. (You can name CSS and JavaScript files anything you want, but the HTML file is usually named index.html because that's what the HTTP server will look for when you go to the root path of your application URL.)
+
+Some developers like to have web servers that automatically reload parts of the application based on what's changed in the code. I find that this has not been reliable for me, and the cost of using these tools is comparatively high (I don't need any additional tooling to open a file in the browser, for example). Many editors will even let you get similar functionality for free if you are working with plain HTML/JavaScript/CSS, which, to me, feels like a better deal.
+
+Keep in mind that the basic theme of the vanilla approach is not performance or reduction in bundle size or anything like that. People are happy with React's performance, so performance is clearly not a very desirable characteristic. Our goal is to not introduce complexity that isn't strictly needed by our application. This starts with any tooling around the project and continues with the code.
