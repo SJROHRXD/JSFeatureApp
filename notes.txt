@@ -246,3 +246,19 @@ The bare minimum you need is a folder to house your files, index.html, index.js 
 Some developers like to have web servers that automatically reload parts of the application based on what's changed in the code. I find that this has not been reliable for me, and the cost of using these tools is comparatively high (I don't need any additional tooling to open a file in the browser, for example). Many editors will even let you get similar functionality for free if you are working with plain HTML/JavaScript/CSS, which, to me, feels like a better deal.
 
 Keep in mind that the basic theme of the vanilla approach is not performance or reduction in bundle size or anything like that. People are happy with React's performance, so performance is clearly not a very desirable characteristic. Our goal is to not introduce complexity that isn't strictly needed by our application. This starts with any tooling around the project and continues with the code.
+
+SCRIPT AT BOTTOM (omg in body):
+
+The reason this is done is because it ensures the page content is there before the code is evaluated. However, this is currently my least preferred way of doing it because it blocks the page until the script is loaded, does not allow multiple scripts to load in parallel, and is similar // similar to what? // . We'll get to the preferred way later.
+
+SCRIPT AT TOP (in head):
+
+If you do it that way, then your script does not have access to the element immediately. On the other hand, it is able to execute before the browser has had a chance to parse and lay out the page content. It also has access to the , and any preceding elements in it, the ability to add new elements to it, etc. Any further parsing of the page is halted until the script is completely loaded and evaluated (meaning everything inside it is executed). This is the pattern you can use if you want to do some initialization before the page shows, such as registering web workers, for example, or dynamically adding (???)
+
+// reminder: inform IPE that half of this article is missing or failing to render //
+
+Script tags can also have one of the following two attributes: async or defer. Unlike the previous two methods, they do not block the parsing and drawing of the page while the JavaScript code is being loaded, and all tags marked with these attributes load in parallel. Because of the non-blocking nature of async and defer scripts, we usually add them to the as there is usually no benefit in adding them further down the page.
+
+The async script will be loaded in a separate thread, and once loaded, it will be evaluated immediately, regardless of whether the page is already loaded or not. There is also no guarantee as to the order of evaluation relative to other scripts on the page, so this is, in that sense, the least reliable way of evaluating your script if you have more than one. Also, because there are no guarantees about the page contents at evaluation time, you will need to wait for the DOMContentLoaded event if you want to work with page elements. I have not yet found a good use case for the async script, but it has its unique characteristics that will probably come in handy in some cases.
+
+The defer script tag is by far the most useful one for general use. It works similar to async, with the notable difference that the evaluation is postponed until the page is parsed.
